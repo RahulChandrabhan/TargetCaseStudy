@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_10">
+
+    <ImageView
+        android:id="@+id/rv_items_all_deals_image_iv"
+        android:layout_width="100dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/rv_items_all_deals_name_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Levis Jeans My Jeans Of Only Jeans"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/sp_25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintStart_toEndOf="@+id/rv_items_all_deals_image_iv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/rv_items_all_deals_dummy_view"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/gray_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rv_items_all_deals_image_iv"
+        app:layout_constraintTop_toBottomOf="@+id/rv_items_all_deals_name_tv" />
+
+    <TextView
+        android:id="@+id/rv_items_all_deals_price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="$18.0"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/sp_22"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toStartOf="@+id/rv_items_all_deals_colored_hardcoded_tv"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@+id/rv_items_all_deals_image_iv"
+        app:layout_constraintTop_toBottomOf="@+id/rv_items_all_deals_dummy_view" />
+
+    <TextView
+        android:id="@+id/rv_items_all_deals_colored_hardcoded_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="ship or"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintBaseline_toBaselineOf="@+id/rv_items_all_deals_price_tv"
+        app:layout_constraintEnd_toStartOf="@+id/rv_items_all_deals_aisle_tv" />
+
+    <TextView
+        android:id="@+id/rv_items_all_deals_aisle_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/circle_border_transparent_bg"
+        android:gravity="center"
+        android:padding="@dimen/dp_5"
+        android:text="B23"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/rv_items_all_deals_colored_hardcoded_tv"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
